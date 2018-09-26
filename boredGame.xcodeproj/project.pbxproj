@@ -13,11 +13,15 @@
 		F495DB7F215BFDB200C20C33 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F495DB7E215BFDB200C20C33 /* GameScene.swift */; };
 		F495DB81215BFDB200C20C33 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F495DB80215BFDB200C20C33 /* GameViewController.swift */; };
 		F495DB84215BFDB200C20C33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F495DB82215BFDB200C20C33 /* Main.storyboard */; };
-		F495DB86215BFDB300C20C33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F495DB85215BFDB300C20C33 /* Assets.xcassets */; };
 		F495DB89215BFDB300C20C33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F495DB87215BFDB300C20C33 /* LaunchScreen.storyboard */; };
 		F495DB94215BFDB300C20C33 /* boredGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F495DB93215BFDB300C20C33 /* boredGameTests.swift */; };
 		F495DB9F215BFDB300C20C33 /* boredGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F495DB9E215BFDB300C20C33 /* boredGameUITests.swift */; };
 		F495DBAD215BFFC000C20C33 /* mario_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F495DBAC215BFFBF00C20C33 /* mario_background.jpg */; };
+		F495DBB5215C0B7D00C20C33 /* mario.png in Resources */ = {isa = PBXBuildFile; fileRef = F495DBB4215C0B7D00C20C33 /* mario.png */; };
+		F495DBB9215C0C4400C20C33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F495DBB8215C0C4400C20C33 /* Assets.xcassets */; };
+		F495DBBD215C213A00C20C33 /* upArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = F495DBBA215C213A00C20C33 /* upArrow.png */; };
+		F495DBBE215C213A00C20C33 /* leftArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = F495DBBB215C213A00C20C33 /* leftArrow.png */; };
+		F495DBBF215C213A00C20C33 /* rightArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = F495DBBC215C213A00C20C33 /* rightArrow.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +49,6 @@
 		F495DB7E215BFDB200C20C33 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		F495DB80215BFDB200C20C33 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		F495DB83215BFDB200C20C33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F495DB85215BFDB300C20C33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F495DB88215BFDB300C20C33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F495DB8A215BFDB300C20C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F495DB8F215BFDB300C20C33 /* boredGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = boredGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +58,11 @@
 		F495DB9E215BFDB300C20C33 /* boredGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boredGameUITests.swift; sourceTree = "<group>"; };
 		F495DBA0215BFDB300C20C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F495DBAC215BFFBF00C20C33 /* mario_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mario_background.jpg; sourceTree = SOURCE_ROOT; };
+		F495DBB4215C0B7D00C20C33 /* mario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mario.png; sourceTree = SOURCE_ROOT; };
+		F495DBB8215C0C4400C20C33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
+		F495DBBA215C213A00C20C33 /* upArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = upArrow.png; sourceTree = SOURCE_ROOT; };
+		F495DBBB215C213A00C20C33 /* leftArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftArrow.png; sourceTree = SOURCE_ROOT; };
+		F495DBBC215C213A00C20C33 /* rightArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightArrow.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,10 +116,14 @@
 				F495DB78215BFDB200C20C33 /* AppDelegate.swift */,
 				F495DB7A215BFDB200C20C33 /* GameScene.sks */,
 				F495DB7C215BFDB200C20C33 /* Actions.sks */,
+				F495DBB8215C0C4400C20C33 /* Assets.xcassets */,
 				F495DB7E215BFDB200C20C33 /* GameScene.swift */,
+				F495DBBB215C213A00C20C33 /* leftArrow.png */,
+				F495DBBC215C213A00C20C33 /* rightArrow.png */,
+				F495DBBA215C213A00C20C33 /* upArrow.png */,
 				F495DB80215BFDB200C20C33 /* GameViewController.swift */,
 				F495DB82215BFDB200C20C33 /* Main.storyboard */,
-				F495DB85215BFDB300C20C33 /* Assets.xcassets */,
+				F495DBB4215C0B7D00C20C33 /* mario.png */,
 				F495DBAC215BFFBF00C20C33 /* mario_background.jpg */,
 				F495DB87215BFDB300C20C33 /* LaunchScreen.storyboard */,
 				F495DB8A215BFDB300C20C33 /* Info.plist */,
@@ -243,10 +255,14 @@
 			files = (
 				F495DB84215BFDB200C20C33 /* Main.storyboard in Resources */,
 				F495DB7B215BFDB200C20C33 /* GameScene.sks in Resources */,
+				F495DBBF215C213A00C20C33 /* rightArrow.png in Resources */,
 				F495DBAD215BFFC000C20C33 /* mario_background.jpg in Resources */,
-				F495DB86215BFDB300C20C33 /* Assets.xcassets in Resources */,
+				F495DBB5215C0B7D00C20C33 /* mario.png in Resources */,
 				F495DB89215BFDB300C20C33 /* LaunchScreen.storyboard in Resources */,
+				F495DBB9215C0C4400C20C33 /* Assets.xcassets in Resources */,
+				F495DBBD215C213A00C20C33 /* upArrow.png in Resources */,
 				F495DB7D215BFDB200C20C33 /* Actions.sks in Resources */,
+				F495DBBE215C213A00C20C33 /* leftArrow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
