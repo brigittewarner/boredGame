@@ -17,6 +17,7 @@
 		F495DB89215BFDB300C20C33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F495DB87215BFDB300C20C33 /* LaunchScreen.storyboard */; };
 		F495DB94215BFDB300C20C33 /* boredGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F495DB93215BFDB300C20C33 /* boredGameTests.swift */; };
 		F495DB9F215BFDB300C20C33 /* boredGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F495DB9E215BFDB300C20C33 /* boredGameUITests.swift */; };
+		F495DBAD215BFFC000C20C33 /* mario_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F495DBAC215BFFBF00C20C33 /* mario_background.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		F495DB9A215BFDB300C20C33 /* boredGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = boredGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F495DB9E215BFDB300C20C33 /* boredGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boredGameUITests.swift; sourceTree = "<group>"; };
 		F495DBA0215BFDB300C20C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F495DBAC215BFFBF00C20C33 /* mario_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mario_background.jpg; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				F495DB80215BFDB200C20C33 /* GameViewController.swift */,
 				F495DB82215BFDB200C20C33 /* Main.storyboard */,
 				F495DB85215BFDB300C20C33 /* Assets.xcassets */,
+				F495DBAC215BFFBF00C20C33 /* mario_background.jpg */,
 				F495DB87215BFDB300C20C33 /* LaunchScreen.storyboard */,
 				F495DB8A215BFDB300C20C33 /* Info.plist */,
 			);
@@ -240,6 +243,7 @@
 			files = (
 				F495DB84215BFDB200C20C33 /* Main.storyboard in Resources */,
 				F495DB7B215BFDB200C20C33 /* GameScene.sks in Resources */,
+				F495DBAD215BFFC000C20C33 /* mario_background.jpg in Resources */,
 				F495DB86215BFDB300C20C33 /* Assets.xcassets in Resources */,
 				F495DB89215BFDB300C20C33 /* LaunchScreen.storyboard in Resources */,
 				F495DB7D215BFDB200C20C33 /* Actions.sks in Resources */,
