@@ -18,10 +18,11 @@ class GameScene: SKScene {
     let leftButton = SKSpriteNode(imageNamed: "leftArrow")
     let rightButton = SKSpriteNode(imageNamed: "rightArrow")
     let upButton = SKSpriteNode(imageNamed: "upArrow")
+    let ground = Ground()
     
     override func didMove(to view: SKView) {
         
-        backgroundColor = SKColor(red: 0, green: 252, blue: 0, alpha: 1.0)
+        backgroundColor = SKColor(red: 0.42, green: 0.55, blue: 1.0, alpha: 1.0)
         
         player.position = CGPoint(x: -200, y: -350)
         leftButton.position = CGPoint(x: -240, y: -570)
@@ -30,6 +31,10 @@ class GameScene: SKScene {
         leftButton.name = "leftButton"
         rightButton.name = "rightButton"
         upButton.name = "upButton"
+        
+        for brick in ground.bricks {
+            self.addChild(brick)
+        }
         
         self.addChild(player)
         self.addChild(leftButton)
