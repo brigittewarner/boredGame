@@ -31,6 +31,9 @@ class Ground {
                 let brick = Brick(imageNamed: "groundBrick")
                 brick.position = CGPoint(x: -350 + (i * brick.width), y: -455 - (r * brick.height))
                 brick.size = CGSize(width: brick.width, height: brick.height)
+                brick.physicsBody = SKPhysicsBody(rectangleOf: brick.size)
+                brick.physicsBody?.isDynamic = false
+                
                 bricks.append(brick)
             }
         }

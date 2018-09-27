@@ -10,6 +10,8 @@
 		449984AB215D2A960067A62F /* Ground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449984AA215D2A960067A62F /* Ground.swift */; };
 		449984AF215D2FF00067A62F /* groundBrick.png in Resources */ = {isa = PBXBuildFile; fileRef = 449984AE215D2FF00067A62F /* groundBrick.png */; };
 		449984B1215D5E6B0067A62F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449984B0215D5E6B0067A62F /* Player.swift */; };
+		F430719D215D34D10048EFBE /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F430719C215D34D10048EFBE /* LaunchImage@2x.png */; };
+		F430719F215D4CB70048EFBE /* marioLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = F430719E215D4CB70048EFBE /* marioLeft.png */; };
 		F495DB79215BFDB200C20C33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F495DB78215BFDB200C20C33 /* AppDelegate.swift */; };
 		F495DB7B215BFDB200C20C33 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F495DB7A215BFDB200C20C33 /* GameScene.sks */; };
 		F495DB7D215BFDB200C20C33 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = F495DB7C215BFDB200C20C33 /* Actions.sks */; };
@@ -48,6 +50,8 @@
 		449984AA215D2A960067A62F /* Ground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ground.swift; sourceTree = "<group>"; };
 		449984AE215D2FF00067A62F /* groundBrick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = groundBrick.png; sourceTree = SOURCE_ROOT; };
 		449984B0215D5E6B0067A62F /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		F430719C215D34D10048EFBE /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = "<group>"; };
+		F430719E215D4CB70048EFBE /* marioLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marioLeft.png; sourceTree = SOURCE_ROOT; };
 		F495DB75215BFDB200C20C33 /* boredGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boredGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F495DB78215BFDB200C20C33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F495DB7A215BFDB200C20C33 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -119,6 +123,8 @@
 		F495DB77215BFDB200C20C33 /* boredGame */ = {
 			isa = PBXGroup;
 			children = (
+				F430719C215D34D10048EFBE /* LaunchImage@2x.png */,
+				F430719E215D4CB70048EFBE /* marioLeft.png */,
 				449984AE215D2FF00067A62F /* groundBrick.png */,
 				F495DB78215BFDB200C20C33 /* AppDelegate.swift */,
 				F495DB7A215BFDB200C20C33 /* GameScene.sks */,
@@ -267,7 +273,9 @@
 				F495DB7B215BFDB200C20C33 /* GameScene.sks in Resources */,
 				F495DBBF215C213A00C20C33 /* rightArrow.png in Resources */,
 				F495DBAD215BFFC000C20C33 /* mario_background.jpg in Resources */,
+				F430719D215D34D10048EFBE /* LaunchImage@2x.png in Resources */,
 				F495DBB5215C0B7D00C20C33 /* mario.png in Resources */,
+				F430719F215D4CB70048EFBE /* marioLeft.png in Resources */,
 				F495DB89215BFDB300C20C33 /* LaunchScreen.storyboard in Resources */,
 				F495DBB9215C0C4400C20C33 /* Assets.xcassets in Resources */,
 				F495DBBD215C213A00C20C33 /* upArrow.png in Resources */,
@@ -476,7 +484,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CA7SUXT5K4;
 				INFOPLIST_FILE = boredGame/Info.plist;
@@ -495,7 +502,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CA7SUXT5K4;
 				INFOPLIST_FILE = boredGame/Info.plist;
