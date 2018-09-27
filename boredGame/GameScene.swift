@@ -20,6 +20,10 @@ class GameScene: SKScene {
     let upButton = SKSpriteNode(imageNamed: "upArrow")
     let ground = Ground()
     
+    var leftButtonIsPressed = false
+    var rightButtonIsPressed = false
+    var upButtonIsPressed = false
+    
     override func didMove(to view: SKView) {
         
         backgroundColor = SKColor(red: 0.42, green: 0.55, blue: 1.0, alpha: 1.0)
@@ -28,13 +32,11 @@ class GameScene: SKScene {
         player.position = CGPoint(x: -200, y: -350)
         player.physicsBody = SKPhysicsBody(circleOfRadius: player.size.width / 2 )
         player.physicsBody?.isDynamic = true
+        player.physicsBody?.allowsRotation = false
         
         leftButton.position = CGPoint(x: -240, y: -570)
         rightButton.position = CGPoint(x: -100, y: -565)
         upButton.position = CGPoint(x: 200, y: -570)
-        leftButton.name = "leftButton"
-        rightButton.name = "rightButton"
-        upButton.name = "upButton"
         
         
         self.addChild(player)
@@ -53,22 +55,47 @@ class GameScene: SKScene {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for touch in (touches) {
-            let positionInScene = touch.location(in: self)
-            let touchedNode = self.atPoint(positionInScene)
-            if let name = touchedNode.name {
-                if name == "leftButton" {
-                    player.texture = SKTexture(imageNamed: "marioLeft")
-                    movePlayer(player, ground, playerDirection.left)
-                }
-                if name == "rightButton" {
-                    player.texture = SKTexture(imageNamed: "mario")
-                    movePlayer(player, ground, playerDirection.right)
-                }
-                if name == "upButton" {
-                    let moveAction: SKAction = SKAction.moveBy(x: 0, y: 200, duration: 0.1)
-                    player.run(moveAction)
-                }
+        for touch in touches {
+            let pointTouched = touch.location(in: self)
+            if leftButton.contains(pointTouched) {
+                leftButtonIsPressed = true
+            }
+            if rightButton.contains(pointTouched) {
+                rightButtonIsPressed = true
+            }
+            if upButton.contains(pointTouched) {
+             upButtonIsPressed = true
+            }
+        }
+    }
+    
+    override func update(_ currentTime: TimeInterval) {
+        if leftButtonIsPressed == true {
+            player.texture = SKTexture(imageNamed: "marioLeft")
+            movePlayer(player, ground, playerDirection.left)
+        }
+    
+        if rightButtonIsPressed == true {
+            player.texture = SKTexture(imageNamed: "mario")
+            movePlayer(player, ground, playerDirection.right)
+        }
+        if upButtonIsPressed == true {
+            let moveAction: SKAction = SKAction.moveBy(x: 0, y: 200, duration: 0.1)
+            player.run(moveAction)
+        }
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        for touch in touches {
+            let pointTouched = touch.location(in: self)
+            if leftButton.contains(pointTouched) {
+                leftButtonIsPressed = false
+            }
+            if rightButton.contains(pointTouched) {
+                rightButtonIsPressed = false
+            }
+            if upButton.contains(pointTouched) {
+                upButtonIsPressed = false
             }
         }
     }
