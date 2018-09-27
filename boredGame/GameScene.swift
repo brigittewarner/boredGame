@@ -23,8 +23,12 @@ class GameScene: SKScene {
     override func didMove(to view: SKView) {
         
         backgroundColor = SKColor(red: 0.42, green: 0.55, blue: 1.0, alpha: 1.0)
+        physicsWorld.gravity = CGVector(dx: 0.0, dy: -2.0)
         
         player.position = CGPoint(x: -200, y: -350)
+        player.physicsBody = SKPhysicsBody(circleOfRadius: player.size.width / 2 )
+        player.physicsBody?.isDynamic = true
+        
         leftButton.position = CGPoint(x: -240, y: -570)
         rightButton.position = CGPoint(x: -100, y: -565)
         upButton.position = CGPoint(x: 200, y: -570)
@@ -40,10 +44,6 @@ class GameScene: SKScene {
         self.addChild(leftButton)
         self.addChild(rightButton)
         self.addChild(upButton)
-        
-        let moveDown = SKAction.moveBy(x: 0, y:-50, duration:1.0)
-
-        player.run(moveDown)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -53,14 +53,16 @@ class GameScene: SKScene {
             if let name = touchedNode.name {
                 if name == "leftButton" {
                     let moveAction: SKAction = SKAction.moveBy(x: -15, y: 0, duration: 0.1)
+                    player.texture = SKTexture(imageNamed: "marioLeft")
                     player.run(moveAction)
                 }
                 if name == "rightButton" {
                     let moveAction: SKAction = SKAction.moveBy(x: 15, y: 0, duration: 0.1)
+                    player.texture = SKTexture(imageNamed: "mario")
                     player.run(moveAction)
                 }
                 if name == "upButton" {
-                    let moveAction: SKAction = SKAction.moveBy(x: 0, y: 15, duration: 0.1)
+                    let moveAction: SKAction = SKAction.moveBy(x: 0, y: 200, duration: 0.1)
                     player.run(moveAction)
                 }
             }
