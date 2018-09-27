@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		449984AB215D2A960067A62F /* Ground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449984AA215D2A960067A62F /* Ground.swift */; };
 		449984AF215D2FF00067A62F /* groundBrick.png in Resources */ = {isa = PBXBuildFile; fileRef = 449984AE215D2FF00067A62F /* groundBrick.png */; };
+		449984B1215D5E6B0067A62F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449984B0215D5E6B0067A62F /* Player.swift */; };
 		F430719D215D34D10048EFBE /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F430719C215D34D10048EFBE /* LaunchImage@2x.png */; };
 		F430719F215D4CB70048EFBE /* marioLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = F430719E215D4CB70048EFBE /* marioLeft.png */; };
 		F495DB79215BFDB200C20C33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F495DB78215BFDB200C20C33 /* AppDelegate.swift */; };
@@ -48,6 +49,7 @@
 /* Begin PBXFileReference section */
 		449984AA215D2A960067A62F /* Ground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ground.swift; sourceTree = "<group>"; };
 		449984AE215D2FF00067A62F /* groundBrick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = groundBrick.png; sourceTree = SOURCE_ROOT; };
+		449984B0215D5E6B0067A62F /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		F430719C215D34D10048EFBE /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = "<group>"; };
 		F430719E215D4CB70048EFBE /* marioLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marioLeft.png; sourceTree = SOURCE_ROOT; };
 		F495DB75215BFDB200C20C33 /* boredGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boredGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +132,7 @@
 				F495DBB8215C0C4400C20C33 /* Assets.xcassets */,
 				F495DB7E215BFDB200C20C33 /* GameScene.swift */,
 				449984AA215D2A960067A62F /* Ground.swift */,
+				449984B0215D5E6B0067A62F /* Player.swift */,
 				F495DBBB215C213A00C20C33 /* leftArrow.png */,
 				F495DBBC215C213A00C20C33 /* rightArrow.png */,
 				F495DBBA215C213A00C20C33 /* upArrow.png */,
@@ -305,6 +308,7 @@
 				F495DB7F215BFDB200C20C33 /* GameScene.swift in Sources */,
 				F495DB81215BFDB200C20C33 /* GameViewController.swift in Sources */,
 				449984AB215D2A960067A62F /* Ground.swift in Sources */,
+				449984B1215D5E6B0067A62F /* Player.swift in Sources */,
 				F495DB79215BFDB200C20C33 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

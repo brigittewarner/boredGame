@@ -52,14 +52,12 @@ class GameScene: SKScene {
             let touchedNode = self.atPoint(positionInScene)
             if let name = touchedNode.name {
                 if name == "leftButton" {
-                    let moveAction: SKAction = SKAction.moveBy(x: -15, y: 0, duration: 0.1)
                     player.texture = SKTexture(imageNamed: "marioLeft")
-                    player.run(moveAction)
+                    movePlayer(player, ground, playerDirection.left)
                 }
                 if name == "rightButton" {
-                    let moveAction: SKAction = SKAction.moveBy(x: 15, y: 0, duration: 0.1)
                     player.texture = SKTexture(imageNamed: "mario")
-                    player.run(moveAction)
+                    movePlayer(player, ground, playerDirection.right)
                 }
                 if name == "upButton" {
                     let moveAction: SKAction = SKAction.moveBy(x: 0, y: 200, duration: 0.1)
