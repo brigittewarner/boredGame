@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		449984AB215D2A960067A62F /* Ground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449984AA215D2A960067A62F /* Ground.swift */; };
+		449984AF215D2FF00067A62F /* groundBrick.png in Resources */ = {isa = PBXBuildFile; fileRef = 449984AE215D2FF00067A62F /* groundBrick.png */; };
 		F495DB79215BFDB200C20C33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F495DB78215BFDB200C20C33 /* AppDelegate.swift */; };
 		F495DB7B215BFDB200C20C33 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F495DB7A215BFDB200C20C33 /* GameScene.sks */; };
 		F495DB7D215BFDB200C20C33 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = F495DB7C215BFDB200C20C33 /* Actions.sks */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		449984AA215D2A960067A62F /* Ground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ground.swift; sourceTree = "<group>"; };
+		449984AE215D2FF00067A62F /* groundBrick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = groundBrick.png; sourceTree = SOURCE_ROOT; };
 		F495DB75215BFDB200C20C33 /* boredGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boredGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F495DB78215BFDB200C20C33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F495DB7A215BFDB200C20C33 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -113,11 +117,13 @@
 		F495DB77215BFDB200C20C33 /* boredGame */ = {
 			isa = PBXGroup;
 			children = (
+				449984AE215D2FF00067A62F /* groundBrick.png */,
 				F495DB78215BFDB200C20C33 /* AppDelegate.swift */,
 				F495DB7A215BFDB200C20C33 /* GameScene.sks */,
 				F495DB7C215BFDB200C20C33 /* Actions.sks */,
 				F495DBB8215C0C4400C20C33 /* Assets.xcassets */,
 				F495DB7E215BFDB200C20C33 /* GameScene.swift */,
+				449984AA215D2A960067A62F /* Ground.swift */,
 				F495DBBB215C213A00C20C33 /* leftArrow.png */,
 				F495DBBC215C213A00C20C33 /* rightArrow.png */,
 				F495DBBA215C213A00C20C33 /* upArrow.png */,
@@ -254,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F495DB84215BFDB200C20C33 /* Main.storyboard in Resources */,
+				449984AF215D2FF00067A62F /* groundBrick.png in Resources */,
 				F495DB7B215BFDB200C20C33 /* GameScene.sks in Resources */,
 				F495DBBF215C213A00C20C33 /* rightArrow.png in Resources */,
 				F495DBAD215BFFC000C20C33 /* mario_background.jpg in Resources */,
@@ -289,6 +296,7 @@
 			files = (
 				F495DB7F215BFDB200C20C33 /* GameScene.swift in Sources */,
 				F495DB81215BFDB200C20C33 /* GameViewController.swift in Sources */,
+				449984AB215D2A960067A62F /* Ground.swift in Sources */,
 				F495DB79215BFDB200C20C33 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
