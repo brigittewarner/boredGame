@@ -36,11 +36,17 @@ class GameScene: SKScene {
         rightButton.name = "rightButton"
         upButton.name = "upButton"
         
+        
+        self.addChild(player)
+        
+        
         for brick in ground.bricks {
             self.addChild(brick)
         }
+        for pipe in ground.pipeList {
+            self.addChild(pipe)
+        }
         
-        self.addChild(player)
         self.addChild(leftButton)
         self.addChild(rightButton)
         self.addChild(upButton)

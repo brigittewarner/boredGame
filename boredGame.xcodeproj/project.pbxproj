@@ -10,6 +10,9 @@
 		449984AB215D2A960067A62F /* Ground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449984AA215D2A960067A62F /* Ground.swift */; };
 		449984AF215D2FF00067A62F /* groundBrick.png in Resources */ = {isa = PBXBuildFile; fileRef = 449984AE215D2FF00067A62F /* groundBrick.png */; };
 		449984B1215D5E6B0067A62F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449984B0215D5E6B0067A62F /* Player.swift */; };
+		449984B5215D78CA0067A62F /* Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449984B4215D78CA0067A62F /* Pipe.swift */; };
+		449984B7215D79390067A62F /* warp_pipe_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 449984B6215D79390067A62F /* warp_pipe_small.png */; };
+		449984B9215D7D640067A62F /* Brick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449984B8215D7D640067A62F /* Brick.swift */; };
 		F430719D215D34D10048EFBE /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F430719C215D34D10048EFBE /* LaunchImage@2x.png */; };
 		F430719F215D4CB70048EFBE /* marioLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = F430719E215D4CB70048EFBE /* marioLeft.png */; };
 		F495DB79215BFDB200C20C33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F495DB78215BFDB200C20C33 /* AppDelegate.swift */; };
@@ -50,6 +53,9 @@
 		449984AA215D2A960067A62F /* Ground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ground.swift; sourceTree = "<group>"; };
 		449984AE215D2FF00067A62F /* groundBrick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = groundBrick.png; sourceTree = SOURCE_ROOT; };
 		449984B0215D5E6B0067A62F /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		449984B4215D78CA0067A62F /* Pipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pipe.swift; sourceTree = "<group>"; };
+		449984B6215D79390067A62F /* warp_pipe_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = warp_pipe_small.png; sourceTree = "<group>"; };
+		449984B8215D7D640067A62F /* Brick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brick.swift; sourceTree = "<group>"; };
 		F430719C215D34D10048EFBE /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = "<group>"; };
 		F430719E215D4CB70048EFBE /* marioLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marioLeft.png; sourceTree = SOURCE_ROOT; };
 		F495DB75215BFDB200C20C33 /* boredGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boredGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +129,7 @@
 		F495DB77215BFDB200C20C33 /* boredGame */ = {
 			isa = PBXGroup;
 			children = (
+				449984B6215D79390067A62F /* warp_pipe_small.png */,
 				F430719C215D34D10048EFBE /* LaunchImage@2x.png */,
 				F430719E215D4CB70048EFBE /* marioLeft.png */,
 				449984AE215D2FF00067A62F /* groundBrick.png */,
@@ -133,6 +140,8 @@
 				F495DB7E215BFDB200C20C33 /* GameScene.swift */,
 				449984AA215D2A960067A62F /* Ground.swift */,
 				449984B0215D5E6B0067A62F /* Player.swift */,
+				449984B8215D7D640067A62F /* Brick.swift */,
+				449984B4215D78CA0067A62F /* Pipe.swift */,
 				F495DBBB215C213A00C20C33 /* leftArrow.png */,
 				F495DBBC215C213A00C20C33 /* rightArrow.png */,
 				F495DBBA215C213A00C20C33 /* upArrow.png */,
@@ -281,6 +290,7 @@
 				F495DBBD215C213A00C20C33 /* upArrow.png in Resources */,
 				F495DB7D215BFDB200C20C33 /* Actions.sks in Resources */,
 				F495DBBE215C213A00C20C33 /* leftArrow.png in Resources */,
+				449984B7215D79390067A62F /* warp_pipe_small.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,7 +318,9 @@
 				F495DB7F215BFDB200C20C33 /* GameScene.swift in Sources */,
 				F495DB81215BFDB200C20C33 /* GameViewController.swift in Sources */,
 				449984AB215D2A960067A62F /* Ground.swift in Sources */,
+				449984B5215D78CA0067A62F /* Pipe.swift in Sources */,
 				449984B1215D5E6B0067A62F /* Player.swift in Sources */,
+				449984B9215D7D640067A62F /* Brick.swift in Sources */,
 				F495DB79215BFDB200C20C33 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,7 +497,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = CA7SUXT5K4;
 				INFOPLIST_FILE = boredGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -503,7 +515,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = CA7SUXT5K4;
 				INFOPLIST_FILE = boredGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
