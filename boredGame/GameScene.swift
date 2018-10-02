@@ -38,11 +38,15 @@ class GameScene: SKScene {
         rightButton.position = CGPoint(x: -100, y: -565)
         upButton.position = CGPoint(x: 200, y: -570)
         
+        self.addChild(player)
+        
         for brick in ground.bricks {
             self.addChild(brick)
         }
+        for pipe in ground.pipeList {
+            self.addChild(pipe)
+        }
         
-        self.addChild(player)
         self.addChild(leftButton)
         self.addChild(rightButton)
         self.addChild(upButton)

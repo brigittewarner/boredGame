@@ -30,6 +30,9 @@ func movePlayer(_ player: SKSpriteNode, _ ground: Ground, _ direction: playerDir
             ground.bricks.forEach({ (brick) in
                 brick.run(moveGround)
             })
+            ground.pipeList.forEach({ (pipe) in
+                pipe.run(moveGround)
+            })
         } else {
             player.run(movePlayerRight)
         }
